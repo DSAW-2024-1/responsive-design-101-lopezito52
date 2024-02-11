@@ -1,162 +1,315 @@
-body{
-    background-color: hsl(30, 54%, 90%);    
-}
-
-.margen{
-    padding-top: 7%; /* Agrega relleno superior */
-    padding-bottom: 7%; /* Agrega relleno inferior */
-}
-
-#Contenedor{   
-    /* Estilos para el contenedor principal */     
-    background-color: white;
-    display: flex; /* Flexbox para el diseño */
-    flex-direction: column; /* Organiza los elementos en columnas */
-    justify-content: center; /* Centra verticalmente los elementos */
-    align-items: center; /* Centra horizontalmente los elementos */
-    border-radius: 15px; /* Agrega borde redondeado */
-    max-width: 650px; /* Establece el ancho máximo */
-    min-width: 250px; /* Establece el ancho mínimo */
-    margin: auto; /* Centra el contenedor horizontalmente */    
-}
-
-.Contenido{
-    display: flex;    
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start; /* Alinea los elementos al principio horizontalmente */
-    padding-left: 5%;
-    padding-right: 5%;       
-}
-
-.Imagen-Contenido{
-    /* Establece estilos para la imagen*/
-    width: 100%; 
-    text-align: center;    
-    padding-top: 5%;
-    img{
-        width: 100%; /* Hace que las imágenes ocupen el ancho completo */
-        border-radius: 15px;
+@media only screen and (max-width: 480px) {
+    /* Estilos específicos para pantallas de hasta 480px de ancho */
+    /* Elimina márgenes y rellenos */
+    body, html {
+        margin: 0;        
     }
-}
 
-h2 {
-    /* Estabblece estilos para los subtitulos*/
-    color: hsl(14, 45%, 36%);
-    font-family: 'Young Serif', serif; /* Establece la fuente del título */   
-}
+    /* Hace que la imagen ocupe todo el ancho de la pantalla */
+    .Imagen-Contenido {
+        margin: 0;
+        padding: 0;
+    }
 
-p {
-    /* Establece estilos para los parrafos */    
-    font-family: 'Outfit', sans-serif;
-    font-size: 1em; /* Tamaño de fuente */    
-    color: hsl(30, 10%, 34%);
-}
-
-.segundaParte{   
-    /* Establece estilos para la segunda parte del contenido */ 
-    width: 95%;
-    background-color: hsl(330, 100%, 98%);
-    padding-left: 2vh;
-    border-radius: 10px;
-    h3{
-        /* Establece estilos para el titulo*/
-        color: hsl(332, 51%, 32%);
+    .Imagen-Contenido img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: block; /* Asegura que la imagen no tenga espacios en blanco debajo */
     }
-    li{
-        /* Establece estilos para el contenido de la lista */
-        padding-bottom: 3%;
-        font-size: 1em;
-        padding-left: 4%;
-    }
-    li::marker{
-        /* Establece estilos para los puntos de la lista */
-        color: hsl(332, 51%, 32%); 
-    }
-    ul{
-        color: hsl(30, 10%, 34%); 
-        margin-top: 0.2rem;
-        font-size: 1em;        
-        padding: 2vh; 
-    }
-}
-
-.terceraParte {    
-    /* Establece estilos para la tercera parte del contenido */
-    width: 100%;
-    ul {        
-        padding: 2vh;
-    }
-    li{
-        /* Establece estilos para el contenido de la lista */
-        padding-bottom: 3%;
-        font-size: 1em;
-        padding-left: 4%;
-    }
-    li::marker{
-        /* Establece estilos para los puntos de la lista */
-        color: hsl(332, 51%, 32%);
-    }
-}
-
-.terceraParte, .cuartaParte{
-    /* Dibuja las linea de separacion entre las partes */
-    border-bottom: 1px solid hsl(0, 0%, 80%);
-    color: hsl(30, 10%, 34%);
-    padding-bottom: 2%;
-    margin-bottom: 2%;
-}
-
-.cuartaParte{
-    /* Establece estilos para la cuarta parte del contenido */
-    ol{
-        padding: 2vh;
-    }
-    li{
-        padding-bottom: 2.5%;
-        font-size: 1em;
-        padding-left: 4%;
-    }
-    li::marker{
+    .Contenido{
+        display: flex;    
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start; /* Alinea los elementos al principio horizontalmente */
+        padding-left: 5%;
+        padding-right: 5%;                       
+    }    
+    h2 {
+        /* Estabblece estilos para los subtitulos*/
         color: hsl(14, 45%, 36%);
-        font-weight: bold;        
+        font-family: 'Young Serif', serif; /* Establece la fuente del título */           
+    }    
+    p {
+        /* Establece estilos para los parrafos */    
+        font-family: 'Outfit', sans-serif;
+        font-size: 1em; /* Tamaño de fuente */    
+        color: hsl(30, 10%, 34%);        
+    }    
+    .segundaParte{   
+        /* Establece estilos para la segunda parte del contenido */ 
+        width: 95%;
+        background-color: hsl(330, 100%, 98%);
+        padding-left: 2vh;
+        border-radius: 10px;        
+        h3{
+            /* Establece estilos para el titulo*/
+            color: hsl(332, 51%, 32%);
+        }
+        li{
+            /* Establece estilos para el contenido de la lista */
+            padding-bottom: 3%;
+            font-size: 1em;
+            padding-left: 4%;
+        }
+        li::marker{
+            /* Establece estilos para los puntos de la lista */
+            color: hsl(332, 51%, 32%); 
+        }
+        ul{
+            color: hsl(30, 10%, 34%); 
+            margin-top: 0.2rem;
+            font-size: 1em;        
+            padding: 2vh; 
+        }
+    }
+    
+    .terceraParte {    
+        /* Establece estilos para la tercera parte del contenido */
+        width: 100%;        
+        ul {        
+            padding: 2vh;
+        }
+        li{
+            /* Establece estilos para el contenido de la lista */
+            padding-bottom: 3%;
+            font-size: 1em;
+            padding-left: 4%;
+        }
+        li::marker{
+            /* Establece estilos para los puntos de la lista */
+            color: hsl(332, 51%, 32%);
+        }
+    }
+    
+    .terceraParte, .cuartaParte{
+        /* Dibuja las linea de separacion entre las partes */
+        border-bottom: 1px solid hsl(0, 0%, 80%);
+        color: hsl(30, 10%, 34%);
+        padding-bottom: 2%;
+        margin-bottom: 2%;
+    }
+    
+    .cuartaParte{
+        /* Establece estilos para la cuarta parte del contenido */        
+        ol{
+            padding: 2vh;
+        }
+        li{
+            padding-bottom: 2.5%;
+            font-size: 1em;
+            padding-left: 4%;
+        }
+        li::marker{
+            color: hsl(14, 45%, 36%);
+            font-weight: bold;        
+        }
+    }
+    
+    .quintaParte{
+        /* Establece estilos para la quinta parte del contenido */
+        width: 100%; /* Estbalece el ancho del contenedor */                
+    }
+    
+    table {
+        /* Define estilos para las tablas */
+        width: 100%;
+        border-collapse: collapse;           
+    }
+    
+    table td {
+        /* Define estilos para las celdas de las tablas */
+        border-bottom: 1px solid hsl(0, 0%, 80%);
+        color: hsl(30, 10%, 34%);
+        padding: 1.2vw;
+        text-align: left;
+    }
+    
+    table .c2 {
+        /* Define estilos para ciertas celdas de las tablas */
+        color: hsl(14, 45%, 36%);
+        font-weight: bold;
+    }
+    
+    table tr#last td {
+        /* Define estilos para la última fila de las tablas */
+        border-bottom: none;        
+    }
+    .attribution { 
+        /* Define estilos para la atribución */
+        font-size: 0.6em ; text-align: center; 
+    }
+    .attribution a { 
+        /* Define estilos para los enlaces en la atribución */
+        color: hsl(228, 45%, 44%);
     }
 }
 
-.quintaParte{
-    /* Establece estilos para la quinta parte del contenido */
-    width: 100%; /* Estbalece el ancho del contenedor */
-}
+@media only screen and (min-width: 481px) {
+    /* Estilos específicos para pantallas de 769px de ancho o más */
+    body{
+        background-color: hsl(30, 54%, 90%);    
+    }
+    
+    .margen{
+        padding-top: 7%; /* Agrega relleno superior */
+        padding-bottom: 7%; /* Agrega relleno inferior */
+    }
+    #Contenedor{   
+        /* Estilos para el contenedor principal */     
+        background-color: white;
+        display: flex; /* Flexbox para el diseño */
+        flex-direction: column; /* Organiza los elementos en columnas */
+        justify-content: center; /* Centra verticalmente los elementos */
+        align-items: center; /* Centra horizontalmente los elementos */
+        border-radius: 15px; /* Agrega borde redondeado */
+        max-width: 650px; /* Establece el ancho máximo  */  
+        margin: auto; /*Centra el contenedor horizontalmente*/
+    }
+    
+    .Contenido{
+        display: flex;    
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start; /* Alinea los elementos al principio horizontalmente */
+        padding-left: 5%;
+        padding-right: 5%;       
+    }
+    
+    .Imagen-Contenido{
+        /* Establece estilos para la imagen*/
+        width: 90%;
+        height: auto; 
+        text-align: center;    
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        img{
+            width: 100%; /* Hace que las imágenes ocupen el ancho completo */
+            border-radius: 15px;
+        }
+        
+    }
+    
+    h2 {
+        /* Estabblece estilos para los subtitulos*/
+        color: hsl(14, 45%, 36%);
+        font-family: 'Young Serif', serif; /* Establece la fuente del título */   
+    }
+    
+    p {
+        /* Establece estilos para los parrafos */    
+        font-family: 'Outfit', sans-serif;
+        font-size: 1em; /* Tamaño de fuente */    
+        color: hsl(30, 10%, 34%);
+    }
+    
+    .segundaParte{   
+        /* Establece estilos para la segunda parte del contenido */ 
+        width: 95%;
+        background-color: hsl(330, 100%, 98%);
+        padding-left: 2vh;
+        border-radius: 10px;
+        h3{
+            /* Establece estilos para el titulo*/
+            color: hsl(332, 51%, 32%);
+        }
+        li{
+            /* Establece estilos para el contenido de la lista */
+            padding-bottom: 3%;
+            font-size: 1em;
+            padding-left: 4%;
+        }
+        li::marker{
+            /* Establece estilos para los puntos de la lista */
+            color: hsl(332, 51%, 32%); 
+        }
+        ul{
+            color: hsl(30, 10%, 34%); 
+            margin-top: 0.2rem;
+            font-size: 1em;        
+            padding: 2vh; 
+        }
+    }
+    
+    .terceraParte {    
+        /* Establece estilos para la tercera parte del contenido */
+        width: 100%;
+        ul {        
+            padding: 2vh;
+        }
+        li{
+            /* Establece estilos para el contenido de la lista */
+            padding-bottom: 3%;
+            font-size: 1em;
+            padding-left: 4%;
+        }
+        li::marker{
+            /* Establece estilos para los puntos de la lista */
+            color: hsl(332, 51%, 32%);
+        }
+    }
+    
+    .terceraParte, .cuartaParte{
+        /* Dibuja las linea de separacion entre las partes */
+        border-bottom: 1px solid hsl(0, 0%, 80%);
+        color: hsl(30, 10%, 34%);
+        padding-bottom: 2%;
+        margin-bottom: 2%;
+    }
+    
+    .cuartaParte{
+        /* Establece estilos para la cuarta parte del contenido */
+        ol{
+            padding: 2vh;
+        }
+        li{
+            padding-bottom: 2.5%;
+            font-size: 1em;
+            padding-left: 4%;
+        }
+        li::marker{
+            color: hsl(14, 45%, 36%);
+            font-weight: bold;        
+        }
+    }
+    
+    .quintaParte{
+        /* Establece estilos para la quinta parte del contenido */
+        width: 100%; /* Estbalece el ancho del contenedor */
+    }
+    
+    table {
+        /* Define estilos para las tablas */
+        width: 100%;
+        border-collapse: collapse;    
+    }
+    
+    table td {
+        /* Define estilos para las celdas de las tablas */
+        border-bottom: 1px solid hsl(0, 0%, 80%);
+        color: hsl(30, 10%, 34%);
+        padding: 1.2vw;
+        text-align: left;
+    }
+    
+    table .c2 {
+        /* Define estilos para ciertas celdas de las tablas */
+        color: hsl(14, 45%, 36%);
+        font-weight: bold;
+    }
+    
+    table tr#last td {
+        /* Define estilos para la última fila de las tablas */
+        border-bottom: none;
+    }
+    .attribution { 
+        /* Define estilos para la atribución */
+        font-size: 0.6em ; text-align: center; 
+    }
+    .attribution a { 
+        /* Define estilos para los enlaces en la atribución */
+        color: hsl(228, 45%, 44%);
+    }
 
-table {
-    /* Define estilos para las tablas */
-    width: 100%;
-    border-collapse: collapse;    
-}
-
-table td {
-    /* Define estilos para las celdas de las tablas */
-    border-bottom: 1px solid hsl(0, 0%, 80%);
-    color: hsl(30, 10%, 34%);
-    padding: 1.2vw;
-    text-align: left;
-}
-
-table .c2 {
-    /* Define estilos para ciertas celdas de las tablas */
-    color: hsl(14, 45%, 36%);
-    font-weight: bold;
-}
-
-table tr#last td {
-    /* Define estilos para la última fila de las tablas */
-    border-bottom: none;
-}
-.attribution { 
-    /* Define estilos para la atribución */
-    font-size: 0.6em ; text-align: center; 
-}
-.attribution a { 
-    /* Define estilos para los enlaces en la atribución */
-    color: hsl(228, 45%, 44%); 
 }
