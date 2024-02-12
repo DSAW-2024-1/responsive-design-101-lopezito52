@@ -128,7 +128,7 @@ table tr#last td {
     color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
     /* Estilos específicos para pantallas de hasta 480px de ancho */
     /* Elimina márgenes y rellenos */
     body {
@@ -149,7 +149,7 @@ table tr#last td {
     }    
 }
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 769px) {
     /* Estilos específicos para pantallas de 769px de ancho o más */
     body{
         background-color: hsl(30, 54%, 90%);    
