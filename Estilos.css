@@ -62,7 +62,7 @@ p {
     }
     li::marker{
         /* Establece estilos para los puntos de la lista */
-        color: hsl(332, 51%, 32%);
+        color: hsl(14, 45%, 36%);
     }
 }
 
@@ -85,7 +85,7 @@ p {
         padding-left: 4%;
     }
     li::marker{
-        color: hsl(332, 51%, 32%);
+        color: hsl(14, 45%, 36%);
         font-weight: bold;        
     }
 }
