@@ -128,8 +128,8 @@ table tr#last td {
     color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (max-width: 768px) {
-    /* Estilos específicos para pantallas de hasta 480px de ancho */
+@media only screen and (max-width: 767px){
+    /* Aquí puedes aplicar estilos específicos para dispositivos móviles en orientación vertical */
     /* Elimina márgenes y rellenos */
     body {
         margin: 0;        
@@ -149,7 +149,7 @@ table tr#last td {
     }    
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
     /* Estilos específicos para pantallas de 769px de ancho o más */
     body{
         background-color: hsl(30, 54%, 90%);    
@@ -181,5 +181,5 @@ table tr#last td {
             width: 100%; /* Hace que las imágenes ocupen el ancho completo */
             border-radius: 15px;
         }        
-    }
+    }    
 }
